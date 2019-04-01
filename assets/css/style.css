@@ -1,0 +1,19 @@
+body {
+
+}
+#titlerow {
+    height: 50px;
+    border: 5px blue solid;
+}
+#qbox {
+    height:325px;
+    border: 5px solid blue;
+}
+#answerbox {
+    height: 325px;
+    border: 5px solid blue;
+}
+#spacer {
+    height: 10px;
+    border: 5px solid red;
+}
