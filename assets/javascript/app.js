@@ -41,7 +41,10 @@ var answers = [["Canada","Alaska","Norway","Russia"],
     ["Woodrow Wilson","Teddy Roosevelt","John Kennedy","John McCarthy"],
     ["Alien","Star Trek","The Black Hole","Flash Gordon"]
 ];
+var images = ["../triviagame/assets/images/Q1image.jpg","../triviagame/assets/images/Q2image.jpg","../triviagame/assets/images/Q3image.jpg","../triviagame/assets/images/Q4image.jpg","../triviagame/assets/images/Q5image.jpg","../triviagame/assets/images/Q6image.png","../triviagame/assets/images/Q7image.jpg","../triviagame/assets/images/Q8image.jpg","../triviagame/assets/images/Q9image.jpg","../triviagame/assets/images/Q10image.jpg",
+"../triviagame/assets/images/Q11image.jpg","../triviagame/assets/images/Q12image.jpg","../triviagame/assets/images/Q13image.jpg","../triviagame/assets/images/Q14image.jpg","../triviagame/assets/images/Q15image.jpg","../triviagame/assets/images/Q16image.jpg","../triviagame/assets/images/Q17image.jpg","../triviagame/assets/images/Q18image.jpg","../triviagame/assets/images/Q19image.jpg","../triviagame/assets/images/Q20image.jpg"];
 
+var waiting = ["../triviagame/assets/images/waiting1.gif","../triviagame/assets/images/waiting2.gif","../triviagame/assets/images/waiting3.gif","../triviagame/assets/images/waiting4.gif"];
 //Variables for the program
 var rndQuest = []; //array for random questions
 var rndAns = []; //Array for randomized answers
@@ -69,7 +72,7 @@ function ansOrder(){
 }; 
 function postQuest() {
     if (counter > rndQuest.length-1) {
-        $("#spacer").text("Gameover. You got " + corrCount + "out of 10 questions correct."); 
+        $("#infobox").text("Gameover. You got " + corrCount + "out of 10 questions correct."); 
     } else {    
         var question = questions[rndQuest[counter]];
         Ans1 = answers[rndQuest[counter]][rndAns[0]];
@@ -81,6 +84,9 @@ function postQuest() {
         $("#Ans2").text(Ans2);
         $("#Ans3").text(Ans3);
         $("#Ans4").text(Ans4); 
+        postGif();
+        postImage();
+        
         };
 };
 
@@ -88,7 +94,7 @@ function checkAnswer(boxchk) {
     var correctAns = answers[rndQuest[counter]][0];
     console.log(boxchk);
     if (correctAns === boxchk) {
-        $("#spacer").text("That is correct!");
+        $("#infobox").text("That is correct!");
         //var delay = setInterval($("#spacer").text(" "),1000);
         //clearInterval(delay);
         counter=counter + 1;
@@ -97,7 +103,7 @@ function checkAnswer(boxchk) {
         rndAns = [];
         ansOrder();
         postQuest();
-    } else { $("#spacer").text("Sorry that is incorrect!");
+    } else { $("#infobox").text("Sorry that is incorrect!");
     //var delay = setInterval($("#spacer").text(" "),1000);
     //clearInterval(delay);
         counter=counter + 1;
@@ -108,15 +114,35 @@ function checkAnswer(boxchk) {
     };
 };
 
-
-
+function postGif() {
+    var num = Math.floor(Math.random()*4);
+    var gif = document.createElement("IMG");
+    gif.src = waiting[num];
+    gif.width = 380;
+    gif.height = 317;
+    $("#waitgif").html(gif);
+};
+function postImage() {
+    var img = document.createElement("IMG");
+    img.src = images[rndQuest[counter]];
+    img.width = 380;
+    img.height = 317;
+    console.log(counter);
+    $('#infobox').html(img);
+};
+function timer() {
+    for (x=120; x > 0; x--) {
+        var countdown = setTimeout(function() {$("#spacer").html("You have 2 minutes to complete the game.  There are " + x + "seconds remaining.");},1000);
+    };
+};
    
-
+$("#titlerow").html("Random Useless Trivia The Home Game");
 
 rndmSelect();
 ansOrder();
 postQuest();
-$("#Ans1").on("click",function() {checkAnswer(Ans1)});
-$("#Ans2").on("click",function() {checkAnswer(Ans2)});
-$("#Ans3").on("click",function() {checkAnswer(Ans3)});
-$("#Ans4").on("click",function() {checkAnswer(Ans4)});
+timer();
+$("#b1").on("click",function() {checkAnswer(Ans1)});
+$("#b2").on("click",function() {checkAnswer(Ans2)});
+$("#b3").on("click",function() {checkAnswer(Ans3)});
+$("#b4").on("click",function() {checkAnswer(Ans4)});
