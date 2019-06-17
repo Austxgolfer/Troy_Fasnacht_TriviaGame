@@ -53,34 +53,34 @@ var answers = [
   ["Alien", "Star Trek", "The Black Hole", "Flash Gordon"]
 ];
 var images = [
-  "../triviagame/assets/images/Q1image.jpg",
-  "../triviagame/assets/images/Q2image.jpg",
-  "../triviagame/assets/images/Q3image.jpg",
-  "../triviagame/assets/images/Q4image.jpg",
-  "../triviagame/assets/images/Q5image.jpg",
-  "../triviagame/assets/images/Q6image.png",
-  "../triviagame/assets/images/Q7image.jpg",
-  "../triviagame/assets/images/Q8image.jpg",
-  "../triviagame/assets/images/Q9image.jpg",
-  "../triviagame/assets/images/Q10image.jpg",
-  "../triviagame/assets/images/Q11image.jpg",
-  "../triviagame/assets/images/Q12image.jpg",
-  "../triviagame/assets/images/Q13image.jpg",
-  "../triviagame/assets/images/Q14image.jpg",
-  "../triviagame/assets/images/Q15image.jpg",
-  "../triviagame/assets/images/Q16image.jpg",
-  "../triviagame/assets/images/Q17image.jpg",
-  "../triviagame/assets/images/Q18image.jpg",
-  "../triviagame/assets/images/Q19image.jpg",
-  "../triviagame/assets/images/Q20image.jpg"
+  "../images/Q1image.jpg",
+  "../images/Q2image.jpg",
+  "../images/Q3image.jpg",
+  "../images/Q4image.jpg",
+  "../images/Q5image.jpg",
+  "../images/Q6image.png",
+  "../images/Q7image.jpg",
+  "../images/Q8image.jpg",
+  "../images/Q9image.jpg",
+  "../images/Q10image.jpg",
+  "../images/Q11image.jpg",
+  "../images/Q12image.jpg",
+  "../images/Q13image.jpg",
+  "../images/Q14image.jpg",
+  "../images/Q15image.jpg",
+  "../images/Q16image.jpg",
+  "../images/Q17image.jpg",
+  "../images/Q18image.jpg",
+  "../images/Q19image.jpg",
+  "../images/Q20image.jpg"
 ];
 
 var waiting = [
-  "../triviagame/assets/images/waiting1.gif",
-  "../triviagame/assets/images/waiting2.gif",
-  "../triviagame/assets/images/waiting3.gif",
-  "../triviagame/assets/images/waiting4.gif",
-  "../triviagame/assets/images/waiting6.gif"
+  "../images/waiting1.gif",
+  "../images/waiting2.gif",
+  "../images/waiting3.gif",
+  "../images/waiting4.gif",
+  "../images/waiting6.gif"
 ];
 //Variables for the program
 var rndQuest = []; //array for random questions
