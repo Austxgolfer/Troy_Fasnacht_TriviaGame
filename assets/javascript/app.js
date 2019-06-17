@@ -53,34 +53,34 @@ var answers = [
   ["Alien", "Star Trek", "The Black Hole", "Flash Gordon"]
 ];
 var images = [
-  "../images/Q1image.jpg",
-  "../images/Q2image.jpg",
-  "../images/Q3image.jpg",
-  "../images/Q4image.jpg",
-  "../images/Q5image.jpg",
-  "../images/Q6image.png",
-  "../images/Q7image.jpg",
-  "../images/Q8image.jpg",
-  "../images/Q9image.jpg",
-  "../images/Q10image.jpg",
-  "../images/Q11image.jpg",
-  "../images/Q12image.jpg",
-  "../images/Q13image.jpg",
-  "../images/Q14image.jpg",
-  "../images/Q15image.jpg",
-  "../images/Q16image.jpg",
-  "../images/Q17image.jpg",
-  "../images/Q18image.jpg",
-  "../images/Q19image.jpg",
-  "../images/Q20image.jpg"
+  "./assets/images/Q1image.jpg",
+  "./assets/images/Q2image.jpg",
+  "./assets/images/Q3image.jpg",
+  "./assets/images/Q4image.jpg",
+  "./assets/images/Q5image.jpg",
+  "./assets/images/Q6image.png",
+  "./assets/images/Q7image.jpg",
+  "./assets/images/Q8image.jpg",
+  "./assets/images/Q9image.jpg",
+  "./assets/images/Q10image.jpg",
+  "./assets/images/Q11image.jpg",
+  "./assets/images/Q12image.jpg",
+  "./assets/images/Q13image.jpg",
+  "./assets/images/Q14image.jpg",
+  "./assets/images/Q15image.jpg",
+  "./assets/images/Q16image.jpg",
+  "./assets/images/Q17image.jpg",
+  "./assets/images/Q18image.jpg",
+  "./assets/images/Q19image.jpg",
+  "./assets/images/Q20image.jpg"
 ];
 
 var waiting = [
-  "../images/waiting1.gif",
-  "../images/waiting2.gif",
-  "../images/waiting3.gif",
-  "../images/waiting4.gif",
-  "../images/waiting6.gif"
+  "./assets/images/waiting1.gif",
+  "./assets/images/waiting2.gif",
+  "./assets/images/waiting3.gif",
+  "./assets/images/waiting4.gif",
+  "./assets/images/waiting6.gif"
 ];
 //Variables for the program
 var rndQuest = []; //array for random questions
